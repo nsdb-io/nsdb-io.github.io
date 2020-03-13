@@ -1,5 +1,6 @@
 ---
-layout: home
+layout: default
+title: title page
 ---
 
-## Content
+##title: Hello there!
