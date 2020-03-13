@@ -2,15 +2,162 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    <div class="container">
-      <div class="row">
-        <div class="col">
-          <h1 class="text-primary"> {{ page.title }}</h1>
-          <p>{{ content }}</p>
-          <i class="fas fa-thumbs-up fa-2x"></i>
+    {% include navbar.html %}
+    <main role="main">
+      <div class="jumbotron txt-align-center gradient  gradient-one">
+        <div class="container">
+          <img src="https://radicalbit.io/wp-content/uploads/2020/03/NSDB-squared-nega.png" class="jumbotron-logo"/>
+          <h1>{{ page.title }}</h1>
+          <h3>{{ page.subtitle }}</h3>
+          <a class="btn btn-primary btn-negative jumbotron-btn btn-lg" href="#" role="button">{{page.button-txt}} &raquo;</a>
+        </div>
+        <div class="jumbotron-bottom"></div>
+      </div>
+      <div class="container">
+        <div class="row txt-align-center">
+          <div class="col">
+            <h2 class="text-primary"> {{ page.title }}</h2>
+            {{ content }}
+          </div>
+        </div>
+        <div class="row txt-align-center">
+          <div class="col">
+            <h2 class="text-primary"> {{ page.title }}</h2>
+            {{ content }}
+          </div>
         </div>
       </div>
-    </div>
+      <div class="row txt-align-center gradient gradient-two">
+        <div class="col">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2> {{ page.title }}</h2>
+              </div>
+            </div>
+            <div class="row row-width-800">
+              <div class="col-md-6">
+                <h3> {{ page.title }}</h3>
+                {{ content }}
+              </div>
+              <div class="col-md-6">
+                <h3> {{ page.title }}</h3>
+                {{ content }}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col">
+                <a class="btn btn-primary btn-negative jumbotron-btn btn-lg" href="#" role="button">{{page.button-txt}} &raquo;</a>
+              </div>
+            </div>
+            <div class="row row-width-800">
+              <div class="col-md-6">
+                <h3> {{ page.title }}</h3>
+                {{ content }}
+              </div>
+              <div class="col-md-6">
+                <h3> {{ page.title }}</h3>
+                {{ content }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row txt-align-center">
+        <div class="col">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2 class="text-secondary"> {{ page.title }}</h2>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                {{ content }}
+              </div>
+              <div class="col-md-6">
+                {{ content }}
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-3">
+                <img src="https://radicalbit.io/wp-content/uploads/2020/03/NSDB-squared-nega.png"/>
+              </div>
+              <div class="col-md-3">
+                <img src="https://radicalbit.io/wp-content/uploads/2020/03/NSDB-squared-nega.png"/>
+              </div>
+              <div class="col-md-3">
+                <img src="https://radicalbit.io/wp-content/uploads/2020/03/NSDB-squared-nega.png"/>
+              </div>
+              <div class="col-md-3">
+                <img src="https://radicalbit.io/wp-content/uploads/2020/03/NSDB-squared-nega.png"/>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row txt-align-center gradient gradient-two">
+        <div class="col">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <h2> {{ page.title }}</h2>
+              </div>
+            </div>
+            <div class="row row-width-800">
+              <div class="col-md-6">
+                <h3> {{ page.title }}</h3>
+                {{ content }}
+                <span class="claim">tech</span>
+              </div>
+              <div class="col-md-6">
+                <h3> {{ page.title }}</h3>
+                {{ content }}
+                <span class="claim">tech</span>
+              </div>
+            </div>
+            <div class="row row-width-800">
+              <div class="col-md-6">
+                <h3> {{ page.title }}</h3>
+                {{ content }}
+                <span class="claim">biz</span>
+              </div>
+              <div class="col-md-6">
+                <h3> {{ page.title }}</h3>
+                {{ content }}
+                <span class="claim">biz</span>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="card">
+                  <img class="card-logo" src="https://radicalbit.io/wp-content/uploads/2019/05/NSDB-squared-posi.png">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card">
+                  <img class="card-logo" src="https://radicalbit.io/wp-content/uploads/2019/05/NSDB-squared-posi.png">
+                  <h5 class="card-title">Special title treatment</h5>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Cras justo odio</li>
+                    <li class="list-group-item">Dapibus ac facilisis in</li>
+                    <li class="list-group-item">Vestibulum at eros</li>
+                  </ul>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
 
     {% include footer.html %}
   </body>

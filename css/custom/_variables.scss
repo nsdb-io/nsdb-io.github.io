@@ -13,8 +13,10 @@ $rdb-default: #A7B3B8;
 $rdb-persian-green: #00a8aa;
 
 $primary: $rdb-viking; 
+$secondary: $rdb-persian-green !default;
 
 
 $font-family-sans-serif: 'Lato', sans-serif;
 $font-family-monospace: 'Inconsolata', monospace;
 
+$jumbotron-padding: 4rem;

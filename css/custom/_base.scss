@@ -1,8 +1,79 @@
 
 body {
-    h1, h2, h3, h4, h5, h6 {
-        font-family:$font-family-sans-serif;
-        font-weight: 300;
-    }
     font-family:$font-family-monospace;
+    -webkit-font-smoothing:antialiased;
+
+    h1 {
+        font-family:$font-family-sans-serif;
+        font-size: 3.2rem;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+    }
+
+    h2 {
+        font-family:$font-family-sans-serif;
+        font-size: 3rem;
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+    }
+
+    h5 {
+        font-family:$font-family-monospace;
+        font-size: 1.5rem;
+        font-weight: 400;
+        margin-bottom: 1.5rem;
+    }
+
+    .row {
+        padding: 3rem;
+
+        &.row-width-800 {
+            max-width: 800px;
+            margin: auto;
+        }
+
+        .row {
+            padding: 1rem;
+        }
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+}
+
+.txt-align-center {
+    text-align: center;
+}
+
+.gradient {
+    color: $rdb-white;
+
+    .card, .card-title {
+        color: $rdb-black;
+    }
+    h1, h2, h3, h4, h5, h6 {
+        color: $rdb-white; 
+    }
+}
+
+.gradient-one {
+    background-size: contain;
+    background-position: top left;
+    background-image: linear-gradient(216deg,#777EBC 30%,#3fb1e3 82%)!important;
+}
+
+.gradient-two {
+    background-image: linear-gradient(179deg,#777EBC 0%,#00A9AA 100%)!important;
+}
+
+.claim {
+    font-size: 1.5rem;
+    background-color: #EBE303;
+    color: #000;
+    width: 100px;
+    padding: .5rem 2rem !important;
+    margin-top: -20px!important;
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(-7deg);
 }
