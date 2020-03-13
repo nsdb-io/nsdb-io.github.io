@@ -47,7 +47,7 @@ body {
     text-align: center;
 }
 
-.gradient {
+.gradient, .bg-dark {
     color: $rdb-white;
 
     .card, .card-title {
@@ -67,6 +67,8 @@ body {
 .gradient-two {
     background-image: linear-gradient(179deg,#777EBC 0%,#00A9AA 100%)!important;
 }
+
+
 
 .claim {
     font-size: 1.5rem;
