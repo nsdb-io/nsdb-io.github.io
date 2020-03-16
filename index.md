@@ -1,7 +1,10 @@
 ---
-layout: default
+layout: home
 title: NSDB Natural Series Database
 subtitle: Scalable, high-performance, open source Time series Database for real-time analytics
+module-title: Module Row Title
+title-short: Short Title
+txt-short: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet dui diam. Vestibulum rhoncus posuere tellus, bibendum euismod diam ultricies ut.
 button-txt: Tech documentation
 button-link: https://github.com/radicalbit/NSDb
 ---
