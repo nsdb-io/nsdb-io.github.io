@@ -3,6 +3,12 @@ body {
     font-family:$font-family-monospace;
     -webkit-font-smoothing:antialiased;
 
+    .navbar {
+        img {
+            height: 30px;
+        }
+    }
+
     h1 {
         font-family:$font-family-sans-serif;
         font-size: 3.2rem;
