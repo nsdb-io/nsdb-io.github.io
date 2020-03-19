@@ -1,5 +1,5 @@
 ---
-layout: home
+layout: default
 title: NSDB Natural Series Database
 subtitle: Scalable, high-performance, open source Time series Database for real-time analytics
 module-title: Module Row Title

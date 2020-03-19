@@ -2,153 +2,73 @@
 <html lang="en">
   {% include head.html %}
   <body>
-    {% include navbar.html %}
-    <main role="main">
-      <div class="jumbotron txt-align-center gradient  gradient-one">
-        <div class="container">
-          <img src="https://radicalbit.io/wp-content/uploads/2020/03/NSDB-squared-nega.png" class="jumbotron-logo"/>
-          <h1>{{ page.title }}</h1>
-          <h5>{{ page.subtitle }}</h5>
-          <a class="btn btn-primary btn-negative jumbotron-btn btn-lg" href="#" role="button">{{page.button-txt}} &raquo;</a>
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar" class="gradient-two">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
         </div>
-        <div class="jumbotron-bottom"></div>
-      </div>
-      <div class="container">
-        <div class="row txt-align-center">
-          <div class="col">
-            <h2 class="text-primary"> {{ page.title }}</h2>
-            {{ content }}
-          </div>
-        </div>
-      </div>
-      <div class="row txt-align-center gradient gradient-two">
-        <div class="col">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <h2> {{ page.title }}</h2>
-              </div>
-            </div>
-            <div class="row row-width-800">
-              <div class="col-md-6">
-                <h3> {{ page.title }}</h3>
-                {{ content }}
-              </div>
-              <div class="col-md-6">
-                <h3> {{ page.title }}</h3>
-                {{ content }}
-              </div>
-            </div>
-            <div class="row">
-              <div class="col">
-                <a class="btn btn-primary btn-negative jumbotron-btn btn-lg" href="#" role="button">{{page.button-txt}} &raquo;</a>
-              </div>
-            </div>
-            <div class="row row-width-800">
-              <div class="col-md-6">
-                <h3> {{ page.title }}</h3>
-                {{ content }}
-              </div>
-              <div class="col-md-6">
-                <h3> {{ page.title }}</h3>
-                {{ content }}
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row txt-align-center">
-        <div class="col">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <h2 class="text-secondary"> {{ page.title }}</h2>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                {{ content }}
-              </div>
-              <div class="col-md-6">
-                {{ content }}
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-3">
-                <img src="https://radicalbit.io/wp-content/uploads/2020/03/NSDB-squared-nega.png"/>
-              </div>
-              <div class="col-md-3">
-                <img src="https://radicalbit.io/wp-content/uploads/2020/03/NSDB-squared-nega.png"/>
-              </div>
-              <div class="col-md-3">
-                <img src="https://radicalbit.io/wp-content/uploads/2020/03/NSDB-squared-nega.png"/>
-              </div>
-              <div class="col-md-3">
-                <img src="https://radicalbit.io/wp-content/uploads/2020/03/NSDB-squared-nega.png"/>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row txt-align-center gradient gradient-three">
-        <div class="col">
-          <div class="container">
-            <div class="row">
-              <div class="col">
-                <h2> {{ page.title }}</h2>
-              </div>
-            </div>
-            <div class="row row-width-800">
-              <div class="col-md-6">
-                <h3> {{ page.title }}</h3>
-                {{ content }}
-              </div>
-              <div class="col-md-6">
-                <h3> {{ page.title }}</h3>
-                {{ content }}
-              </div>
-            </div>
-            <div class="row row-width-800">
-              <div class="col-md-6">
-                <h3> {{ page.title }}</h3>
-                {{ content }}
-              </div>
-              <div class="col-md-6">
-                <h3> {{ page.title }}</h3>
-                {{ content }}
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-md-6">
-                <div class="card">
-                  <img class="card-logo" src="https://radicalbit.io/wp-content/uploads/2019/05/NSDB-squared-posi.png">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <img class="card-logo" src="https://radicalbit.io/wp-content/uploads/2019/05/NSDB-squared-posi.png">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Cras justo odio</li>
-                    <li class="list-group-item">Dapibus ac facilisis in</li>
-                    <li class="list-group-item">Vestibulum at eros</li>
-                  </ul>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
+				<div class="p-4 pt-5">
+		  		<a href="index.html" class="logo">
+					<img src="https://radicalbit.io/wp-content/uploads/2020/03/NSDB-squared-nega.png" class="sidebar-logo"/>
+				  </a>
+	        <ul class="list-unstyled components mb-5">
+	          <li class="active">
+	            <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Home</a>
+	            <ul class="collapse list-unstyled" id="homeSubmenu">
+                <li>
+                    <a href="#">Home 1</a>
+                </li>
+                <li>
+                    <a href="#">Home 2</a>
+                </li>
+                <li>
+                    <a href="#">Home 3</a>
+                </li>
+	            </ul>
+	          </li>
+	          <li>
+	              <a href="#">About</a>
+	          </li>
+	          <li>
+              <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Pages</a>
+              <ul class="collapse list-unstyled" id="pageSubmenu">
+                <li>
+                    <a href="#">Page 1</a>
+                </li>
+                <li>
+                    <a href="#">Page 2</a>
+                </li>
+                <li>
+                    <a href="#">Page 3</a>
+                </li>
+              </ul>
+	          </li>
+	          <li>
+              <a href="#">Portfolio</a>
+	          </li>
+	          <li>
+              <a href="#">Contact</a>
+	          </li>
+	        </ul>
 
-    {% include footer.html %}
+	        <div class="footer">
+				@NSDB • 2020
+	        </div>
+
+	      </div>
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+
+        <h2 class="mb-4">Sidebar #02</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+		</div>
+
   </body>
 </html>
