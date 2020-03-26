@@ -3,7 +3,7 @@ layout: pages
 title: Publish Subscribe
 ---
 
-# WebSocket APIs
+## WebSocket APIs
 
 Opening a websocket using this API allows to subscribe to a query and listen to data updates.
 

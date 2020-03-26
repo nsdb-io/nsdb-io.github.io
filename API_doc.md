@@ -3,7 +3,7 @@ layout: pages
 title: NSDb API
 ---
 
-# Integration API
+## Integration API
 NSDb provides a set of APIs written both in Scala and Java to allow third-party systems integration. An example of usage of these APIs is the implementation of the Flink Sink operator.
 
 
@@ -11,12 +11,12 @@ Despite actual APIs implementation is limited to Java and Scala languages, the s
 
 The main difference between Java and Scala APIs is the way asynchronous calls are handled. In Java, `CompletableFuture` is used, while async results in Scala are wrapped into Scala native `Future`.
 
-# Java API
+## Java API
 
 NSDb implements utility classes to perform writes and to execute queries using **Java language**.
 In both cases, communication to NSDb cluster is handled using a gRPC Client instantiated in ` io.radicalbit.nsdb.api.java.NSDB` connection class.
 
-## Init API
+### Init API
 Before writing into a metric, NSDb provides an api that makes possible to set some metric parameter in order to optimize write or read performance.
 The Init api allows the user to set the following custom parameters for a metric
 
@@ -53,7 +53,7 @@ IsSuccessful = true
 errors = ""
 ```
 
-## Write API
+### Write API
 The `NSDB` class  exposes a `write` method performing ` io.radicalbit.nsdb.api.java.NSDB.Bit` insert into the specified metric.
 The record to be inserted must of class `Bit`. Bit's parameters are defined using build pattern.
 Insert operation returns `io.radicalbit.nsdb.api.java.InsertResult` wrapped into a java `CompletableFuture`. `InsertResult` contains a `Boolean` describing request's success or failure and in case of failure the list of errors.
@@ -87,7 +87,7 @@ Results:
 IsSuccessful = true
 errors = ""
 ```
-## Read API
+### Read API
 As mentioned above Read API , as Write API, makes use of the same component `NSDB` but calling the `executeStatement` method. `NSDB.executeStatement` accepts a `NSDB.SQLStatement` parameter describing:
 
 - database to run the select statements on

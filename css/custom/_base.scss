@@ -3,12 +3,20 @@ body {
     font-family:$font-family-monospace;
     -webkit-font-smoothing:antialiased;
 
+    &.rdb-page{
+        img {
+            max-width: 800px;
+            margin: auto;
+            float: none;
+        }
+    }
+
     main {
         margin: -3rem;
     }
 
     .footer {
-        margin: 3rem -3rem -3rem;
+        margin: 6rem -3rem -3rem;
     }
 
     #sidebar {
@@ -24,13 +32,19 @@ body {
         font-size: 3.2rem;
         font-weight: 300;
         margin-bottom: 1.5rem;
+        color: $primary;
     }
 
     h2 {
         font-family:$font-family-sans-serif;
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 300;
         margin-bottom: 1.5rem;
+        margin-top: 4rem;
+    }
+
+    h3 {
+        margin-top: 3rem;
     }
 
     h5 {

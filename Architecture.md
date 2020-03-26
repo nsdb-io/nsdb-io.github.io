@@ -74,7 +74,7 @@ select sum(value) from accesses group by priority
 
 Perhaps the most interesting feature of NSDb is a special case of data streaming based on a publish-subscribe pattern.
 
-![Publish-Subscribe Model](img/pub-sub.png "Publish Subscribe Model")
+![Publish-Subscribe Model](/assets/images/pub-sub.png "Publish Subscribe Model")
 
 A user needs to subscribe by performing the following steps:
 
@@ -86,7 +86,7 @@ If we consider NSDb as a Source and the subscriber as a Sink, this publish-subsc
 
 ## Overall Architecture
 
-![Overall Architecture](img/overall.png "Overall Architecture")
+![Overall Architecture](/assets/images/overall.png "Overall Architecture")
 
 
 NSDb strongly relies on [akka](https://github.com/akka/akka), _the implementation of the Actor Model on the JVM._
