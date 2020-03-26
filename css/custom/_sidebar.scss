@@ -24,7 +24,7 @@
     &.active{
         margin-left: -250px;
         .custom-menu{
-              margin-right: -50px;
+              margin-right: -1rem;
         }
     }
     h1{
@@ -79,13 +79,14 @@
           position: absolute;
           top: 20px;
           right: 0;
-          margin-right: -20px;
+          // margin-right: 0;
           @include transition(.3s);
           .btn{
               width: 40px;
               height: 40px;
               border-radius: 50%;
               text-align: center;
+              position: fixed;
               .fa {
                   margin-left: -.3rem;
                   color: $white;
