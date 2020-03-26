@@ -2,9 +2,16 @@
 layout: home
 title: NSDB Natural Series Database
 subtitle: Scalable, high-performance, open source Time series Database for real-time analytics
-module-title: Module Row Title
-title-short: Short Title
-txt-short: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet dui diam. Vestibulum rhoncus posuere tellus, bibendum euismod diam ultricies ut.
+about-title: What is NSDB?
+key-benefits-title: Key Benefits 
+key-benefits-01-title: Query Optimization
+key-benefits-01-content: Ad hoc storage algorithms aimed at optimizing time-series related frequent access patterns (temporal queries)
+key-benefits-02-title: Real-Time streaming
+key-benefits-02-content: Near real-time streaming throughout all the layers of the kappa architectures leveraging client-side push technologies (WebSockets)
+key-benefits-03-title: SQL Support
+key-benefits-03-content: SQL - like query support in order to embrace the larger number of adopters and speed up  developers productivity
+key-benefits-04-title: On Top of Kubernetes
+key-benefits-04-content: Nsdb is a self-contained solution -no external dependencies and it is built on top of Kubernetes.  This allows an out-of-the-box installation on the most common cloud providers
 button-txt: Tech documentation
 button-link: https://github.com/radicalbit/NSDb
 ---
