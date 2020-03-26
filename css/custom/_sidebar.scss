@@ -24,7 +24,7 @@
     &.active{
         margin-left: -250px;
         .custom-menu{
-              margin-right: -1rem;
+              margin-right: -.5rem;
         }
     }
     h1{
@@ -77,9 +77,9 @@
     .custom-menu{
           display: inline-block;
           position: absolute;
-          top: 20px;
+          top: .5rem;
           right: 0;
-          margin-right: -1rem;
+          margin-right: 1.5rem;
           @include transition(.3s);
           .btn{
               width: 40px;
