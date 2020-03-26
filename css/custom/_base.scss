@@ -7,9 +7,15 @@ body {
         margin: -3rem;
     }
 
-    .navbar {
-        img {
-            height: 30px;
+    .footer {
+        margin: 3rem -3rem -3rem;
+    }
+
+    #sidebar {
+        .p-4 {
+            position: fixed;
+            max-width: 250px;
+
         }
     }
 
@@ -51,6 +57,12 @@ body {
         max-width: 100%;
     }
 
+}
+
+pre {
+    color: $rdb-white;
+    background:$rdb-black;
+    padding: 1rem;
 }
 
 .txt-align-center {

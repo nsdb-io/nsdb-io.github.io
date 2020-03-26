@@ -3,7 +3,7 @@ title: NSDB • Natural Series Database
 email: info@ndsb.org
 description:
 baseurl:
-url:
+url: //
 
 # Build settings
 sass:
@@ -16,14 +16,3 @@ disqus:
   shortname: NSDB
   
 google_analytics: #
-  
-  # Build settings
-  markdown: kramdown
-  theme: minima
-  plugins:
-    - jekyll-feed
-    - jekyll-seo-tag
-  exclude:
-    - Gemfile
-    - Gemfile.lock
-  
