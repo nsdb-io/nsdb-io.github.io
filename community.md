@@ -3,4 +3,15 @@ layout: pages
 title: Community
 ---
 
-NSDb is a time-series Database conceived having streaming real-time analytics in mind. Besides managing time-series data, it perfectly fits the read side of Kappa Architectures or systems based on Command Query Responsibility Segregation pattern. Still, NSDB unifies the storage and retrieval of historical time-series data with real-time one. The plus is to store metrics and bind directly the incoming indexed data to the final users, thanks to pushing technologies like WebSocket.
+## Reporting Issues
+
+If you find any bug, please open a [GitHub issue](https://github.com/radicalbit/nsdb/issues).
+
+## Documentation
+
+* Read more about the [design and architecture](docs/Architecture.md) of the project.
+
+## Contributing
+
+If you're feeling courageous enough and want to contribute to NSDb You are very welcome!
+Please take a look at our [Contributing Doc](docs/Contributing.md) for info on how to open tasks or bugs, build from source, run tests and open pull requests.
