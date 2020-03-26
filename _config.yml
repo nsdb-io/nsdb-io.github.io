@@ -1,11 +1,30 @@
 # Site settings
-title:
-email:
-author:
+title: NSDB • Natural Series Database
+email: info@ndsb.org
 description:
+baseurl:
 url:
 
 # Build settings
 permalink: :title/
 sass:
   sass_dir: css
+
+lang: it_IT
+
+# Mimima Theme settings
+disqus:
+  shortname: NSDB
+  
+google_analytics: #
+  
+  # Build settings
+  markdown: kramdown
+  theme: minima
+  plugins:
+    - jekyll-feed
+    - jekyll-seo-tag
+  exclude:
+    - Gemfile
+    - Gemfile.lock
+  

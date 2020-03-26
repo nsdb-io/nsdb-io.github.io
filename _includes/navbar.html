@@ -1,28 +1,55 @@
-<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="#">
-      <img src="assets/images/NSDB-orizz-nega.png" alt="">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<nav id="sidebar" class="gradient-two">
+  <div class="custom-menu">
+    <button type="button" id="sidebarCollapse" class="btn btn-primary">
+      <i class="fa fa-bars"></i>
+      <span class="sr-only">Toggle Menu</span>
     </button>
-  
-    <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#">Product</a>
+  </div>
+  <div class="p-4">
+    <a href="index.html" class="logo">
+      <img src="/assets/images/NSDB-squared-nega.png" class="sidebar-logo"/>
+    </a>
+    <ul class="list-unstyled components mb-5">
+      <li class="active">
+        <a href="/product" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Product</a>
+          <ul class="collapse list-unstyled" id="homeSubmenu">
+            <li>
+              <a href="#">Optimized time series management</a>
+            </li>
+            <li>
+                <a href="#">Focus on read performance</a>
+            </li>
+            <li>
+                <a href="#">High availability and clustering</a>
+            </li>
+            <li>
+              <a href="#">Ad-hoc publish-subscribe streaming feature</a>
+            </li>
+            <li>
+                <a href="#">SQL like query language</a>
+            </li>
+            <li>
+                <a href="#">Fluent Java / Scala Api</a>
+            </li>
+          </ul>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Learn</a>
+        <li>
+            <a href="/getting-started">Getting Started</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Community</a>
+        <li>
+          <a href="/community" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Community</a>
+          <ul class="collapse list-unstyled" id="pageSubmenu">
+            <li>
+                <a href="#">Issues</a>
+            </li>
+            <li>
+                <a href="#">Contributing</a>
+            </li>
+          </ul>
         </li>
-        <li class="nav-item">
-            <a class="nav-link" href="#">Roadmap</a>
+        <li>
+          <a href="/contacts">Contact us</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-      </li>
       </ul>
-    </div>
-  </nav>
+  </div>
+</nav>
