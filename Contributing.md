@@ -3,7 +3,7 @@ layout: pages
 title: Contributing Guidelines
 ---
 
-In the [GitHub issue Page](https://github.com/radicalbit/nsdb/issues), you can find a list of tasks to be implemented or bugs already discovered.
+In the [GitHub issue Page](https://github.com/radicalbit/nsdb/issues){:target="_blank"}, you can find a list of tasks to be implemented or bugs already discovered.
 
 When you find a new bug, you can open a new issue making sure that:
 - a brief description and a path to replicate it is provided.

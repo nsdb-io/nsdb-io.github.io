@@ -16,7 +16,7 @@ The library artifact is publicly available in a dedicated maven repository, avai
 
 ### Release versions
 
-###Maven dependencies:
+#### Maven dependencies:
 
 ```
 <project>
@@ -44,7 +44,7 @@ The library artifact is publicly available in a dedicated maven repository, avai
 </<project>
 ```
 
-### SBT dependencies:
+#### SBT dependencies:
 
 ```
 resolvers += "NSDb Public Releases" at "https://tools.radicalbit.io/artifactory/public-release/"
