@@ -18,8 +18,9 @@
   &.btn-negative {
     color: $rdb-white;
     &:hover {
-      color: $primary;
-      background: $white;
+      color: $rdb-white;
+      background: $secondary;
+      border-color: $rdb-white;
     }
   }
 }
