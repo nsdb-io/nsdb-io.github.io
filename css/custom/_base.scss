@@ -55,6 +55,11 @@ body {
 
         small {
             color: $rdb-white;
+            opacity: .4;
+
+            &:hover {
+                opacity: 1;
+            }
         }
 
         .row {

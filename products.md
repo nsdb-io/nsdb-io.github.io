@@ -20,16 +20,15 @@ ___
 
 There are definite benefits to using a database designed for your time series data, but two, in particular, pop up on the radar: 
 
-
 ## Scalability
 A time-series database focuses on a higher number of writes with eventual consistency, even across distributed storage, and this specialty implies less worry for the users that care for their data. Additionally, time-series databases manage scalability by introducing efficiencies that are only possible once you treat time as a first-class citizen. These efficiencies end in performance improvements, including higher ingest rates, faster queries at scale, and better data compression.
 
 ## Usability
 Developers are increasingly adopting time-series databases and using them for a spread of use cases because of TSDBs typical functions and operations like data retention policies, continuous queries, flexible time aggregations, and so on, and these features can provide a far better user experience and simplify your life.
 
-___
 ## License
 NSDb is distributed under the [Apache 2](http://www.apache.org/licenses/LICENSE-2.0) license.
+
 
 ## Main Features
 
