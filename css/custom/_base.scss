@@ -12,6 +12,11 @@ body {
 
         h3 {
             margin-top: 3rem;
+            color: $primary;
+        }
+
+        h4 {
+            margin-top: 2rem;
         }
 
         img {
@@ -20,9 +25,6 @@ body {
             float: none;
         }
 
-        h3 {
-            color: $primary;
-        }
     }
 
     &.rdb-home {

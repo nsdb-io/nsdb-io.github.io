@@ -87,16 +87,21 @@
               border-radius: 50%;
               text-align: center;
               position: fixed;
+              display: block;
+              padding: 0;
               .fa {
-                  margin-left: -.3rem;
-                  color: $white;
+                  color: $primary;
               }
               &.btn-primary{
-                  background: darken($primary,10%);
-                  border-color: darken($primary,10%);
+                  background: $rdb-white;
+                  border-color: $rdb-white;
                   &:hover, &:focus{
-                      background: darken($primary,10%) !important;
-                      border-color: darken($primary,10%) !important;
+                      background: $primary !important;
+                      border-color: $primary !important;
+
+                      .fa {
+                        color: $rdb-white;
+                    }
                   }
               }
           }
