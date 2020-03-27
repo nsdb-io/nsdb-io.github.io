@@ -1,4 +1,7 @@
-# Contributing guidelines
+---
+layout: pages
+title: Contributing Guidelines
+---
 
 In the [GitHub issue Page](https://github.com/radicalbit/nsdb/issues), you can find a list of tasks to be implemented or bugs already discovered.
 

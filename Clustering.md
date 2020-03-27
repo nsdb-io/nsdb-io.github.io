@@ -131,7 +131,7 @@ This mode uses the kubernetes Java api in order to lookup for NSDb pods that are
 It's not possible to create a kubernetes statefulset using this mode.
 Below an example of 
 
-[k8s api example](../k8s/nsdb-cluster-deployment.yml)
+[k8s api example](/K8sApi)
 
 #### k8s-dns
 
@@ -139,4 +139,4 @@ This mode leverages DNS lookup queries in order to detect pods and bootstrap the
 <br>It is more flexible that the previous one because it's possible to install a k8s deployment and a statefulset as well.
 There is an additional entity, a kubernetes headless service, that must be created so that readiness probes don’t interfere with bootstrap.
 
-[k8s dns example](../k8s/nsdb-cluster-stateful.yml)
+[k8s dns example](/K8sDns)

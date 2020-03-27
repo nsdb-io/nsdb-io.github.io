@@ -1,0 +1,158 @@
+---
+layout: pages
+title: K8s Api 
+---
+
+```yml
+# Copyright 2018-2020 Radicalbit S.r.l.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+---
+apiVersion: "apps/v1"
+kind: StatefulSet
+metadata:
+  name: nsdb
+  labels:
+    app: nsdb
+spec:
+  podManagementPolicy: Parallel
+  serviceName: "nsdb-dns-internal"
+  replicas: 3
+  selector:
+    matchLabels:
+      app: nsdb
+  volumeClaimTemplates:
+    - metadata:
+        name: nsdb
+      spec:
+        accessModes:
+          - "ReadWriteOnce"
+        resources:
+          requests:
+            storage: 10Gi
+  template:
+    metadata:
+      labels:
+        app: nsdb
+    spec:
+      restartPolicy: Always
+      containers:
+        - name: nsdb
+          image: weareradicalbit/nsdb:1.0.0-SNAPSHOT
+          imagePullPolicy: IfNotPresent
+          #health
+          readinessProbe:
+            httpGet:
+              path: /ready
+              port: management
+            initialDelaySeconds: 60
+          livenessProbe:
+            httpGet:
+              path: /alive
+              port: management
+            initialDelaySeconds: 60
+          #health
+          ports:
+            - name: remoting
+              containerPort: 2552
+              protocol: TCP
+            - name: management
+              containerPort: 8558
+              protocol: TCP
+            - name: http
+              containerPort: 9000
+              protocol: TCP
+            - name: grpc
+              containerPort: 7817
+              protocol: TCP
+          volumeMounts:
+            - name: nsdb
+              mountPath: opt/nsdb/data
+          env:
+            # Can be removed once async-dns supports search domains (in Akka 2.5.20)
+            - name: NAMESPACE
+              valueFrom:
+                fieldRef:
+                  fieldPath: metadata.namespace
+            # The DNS-based discovery will use this service name to look for the headless
+            # service defined below
+            - name: AKKA_CLUSTER_BOOTSTRAP_SERVICE_NAME
+              value: "nsdb-dns-internal"
+            - name: CLUSTER_MODE
+              value: "k8s-dns"
+            - name: SHARD_INTERVAL
+              value: "10d"
+---
+#headless
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nsdb
+  annotations:
+    service.alpha.kubernetes.io/tolerate-unready-endpoints: "true"
+  name: "nsdb-dns-internal"
+spec:
+  ports:
+    - name: management
+      port: 8558
+      protocol: TCP
+      targetPort: 8558
+    - name: remoting
+      port: 2552
+      protocol: TCP
+      targetPort: 2552
+    - name: http
+      port: 9000
+      protocol: TCP
+      targetPort: 9000
+    - name: grpc
+      port: 7817
+      protocol: TCP
+      targetPort: 7817
+  selector:
+    app: nsdb
+  clusterIP: None
+  publishNotReadyAddresses: true
+#headless
+---
+#public
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: nsdb
+  name: "nsdb-dns"
+spec:
+  ports:
+    - name: management
+      port: 8558
+      protocol: TCP
+      targetPort: 8558
+    - name: http
+      port: 9000
+      protocol: TCP
+      targetPort: 9000
+    - name: grpc
+      port: 7817
+      protocol: TCP
+      targetPort: 7817
+  selector:
+    app: "nsdb"
+  type: LoadBalancer
+#public
+
+```
+
+

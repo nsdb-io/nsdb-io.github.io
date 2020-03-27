@@ -3,13 +3,56 @@ layout: pages
 title: NSDb API
 ---
 
-## Integration API
 NSDb provides a set of APIs written both in Scala and Java to allow third-party systems integration. An example of usage of these APIs is the implementation of the Flink Sink operator.
-
 
 Despite actual APIs implementation is limited to Java and Scala languages, the same functionalities can be easily implemented in others languages based on the agnostic protocol integration APIs are designed on top of. In fact, they are based on [gRPC](https://grpc.io/) standard that works across multiple languages and platforms.
 
 The main difference between Java and Scala APIs is the way asynchronous calls are handled. In Java, `CompletableFuture` is used, while async results in Scala are wrapped into Scala native `Future`.
+
+___
+## Adding the library to your project
+
+The library artifact is publicly available in a dedicated maven repository, available at https://tools.radicalbit.io/artifactory/public-release/io/radicalbit/nsdb/.
+
+### Release versions
+
+###Maven dependencies:
+
+```
+<project>
+...
+    <repositories>
+        <repository>
+        <id>NSDb</id>
+        <name>NSDb Repo</name>
+        <url>https://tools.radicalbit.io/artifactory/public-release/</url>
+        </repository>
+    </repositories>
+...
+    <dependency>
+        groupId>io.radicalbit.nsdb</groupId>
+        <artifactId>nsdb-java-api</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+...
+    <dependency>
+        groupId>io.radicalbit.nsdb</groupId>
+        <artifactId>nsdb-scala-api_2.12</artifactId>
+        <version>1.0.0</version>
+    </dependency>
+...
+</<project>
+```
+
+### SBT dependencies:
+
+```
+resolvers += "NSDb Public Releases" at "https://tools.radicalbit.io/artifactory/public-release/"
+
+libraryDependencies += "io.radicalbit.nsdb" %% "nsdb-scala-api" % "1.0.0"
+
+libraryDependencies += "io.radicalbit.nsdb" % "nsdb-java-api" % "1.0.0"
+```
 
 ___
 

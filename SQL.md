@@ -1,9 +1,8 @@
 ---
 layout: pages
-title: Sql
+title: SQL Dialect Reference
 ---
 
-## Supported SQL Dialect Reference
 To interact with NSDb, a custom SQL like query language must be used. It has been designed to suit NSDb metrics structure and in the meantime to feel familiar with standard SQL.
 Since the nature of NSDb is different than a classic SQL database, its dialect is conceived to handle time-series data accordingly.
 

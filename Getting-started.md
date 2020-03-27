@@ -128,8 +128,8 @@ ___
 ## Next steps
 NSDb exposes data retrieval and insertion using both:
 
-- Web APIs see [doc](RestApis.md)
-- Command Line Interface (CLI) see [doc](CLI_doc.md)
+- [Web APIs](RestApis)
+- [Command Line Interface (CLI)](CLI_doc)
 
-Query subscription can be achieved making use of WebSocket APIs fully described in [doc](Websocket.md).
+Query subscription can be achieved making use of [WebSocket APIs](PublishSubscribe).
 
