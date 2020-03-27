@@ -23,9 +23,14 @@ offers-content-02: Data are stored at a high speed and analyzed easily
 offers-title-03: High capacity
 offers-content-03: Fast and scalable to accommodate huge amounts of data it responds robustly to queries against large datasets
 
-
 button-txt: Tech documentation
 button-link: https://github.com/radicalbit/NSDb
+
+card-left-title: OPEN-SOURCE
+card-left-content: 
+card-right-title: ENTERPRISE
+card-right-content:
+
 ---
 
 NSDb is a time-series Database conceived having streaming real-time analytics in mind. Besides managing time-series data, it perfectly fits the read side of Kappa Architectures or systems based on Command Query Responsibility Segregation pattern. Still, NSDB unifies the storage and retrieval of historical time-series data with real-time one. The plus is to store metrics and bind directly the incoming indexed data to the final users, thanks to pushing technologies like WebSocket.
