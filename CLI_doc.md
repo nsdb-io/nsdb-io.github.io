@@ -16,6 +16,8 @@ Furthermore users can execute schema related operations, commonly defined as **c
 
 NSDb CLI makes use of gRPC client to communicate with NSDb cluster.
 
+___
+
 ## Commands Usage
 CLI launch command:
 ```sh
@@ -95,6 +97,7 @@ nsdb $ describe famous_people
 |value    |BIGINT |
 +---------+-------+
 ```
+___
 
 ## Statements Usage
 
