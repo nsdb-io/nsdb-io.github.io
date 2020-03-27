@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: NSDb Architecture
+title: Focus on read performance
 ---
 
 NSDb is a time series database, thus it is optimized for handling time series data, i.e. a series of multi dimensional data points indexed by time.

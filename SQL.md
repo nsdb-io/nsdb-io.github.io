@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: SQL Dialect Reference
+title: SQL Like Query Language
 ---
 
 To interact with NSDb, a custom SQL like query language must be used. It has been designed to suit NSDb metrics structure and in the meantime to feel familiar with standard SQL.
