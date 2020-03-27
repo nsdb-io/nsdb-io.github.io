@@ -40,7 +40,9 @@ in particular to gather all the write or read requests from the clients, propaga
 all of them in order to ensure synchronization and to react to failures.
 <br>Akka provides an infrastructure that enables all the feature described above. Basically, coordinators are modeled as parent actors while replicas as children actor watched (monitored) by the parents.
 Every cluster node has got a Coordinator for write and for read operations.
-                                                                                                          
+                                                                                                        
+___
+
 ## General Configuration
 
 NSDb cluster configurations are designed to give the user the maximum flexibility. 
@@ -58,6 +60,7 @@ Briefly, there is an acknowledge process that is performed synchronously at ever
 the number of replicas specified in the above configuration are retrieved if existing or created from scratch and, 
 if it went without errors, a positive response is returned to the caller. 
  
+___
 
 ## Metric System
 
@@ -75,6 +78,7 @@ nsdb.cluster {
     metrics-selector = disk
 }
 ```
+___
 
 ## Cluster Modes
 

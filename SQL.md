@@ -3,9 +3,11 @@ layout: pages
 title: Sql
 ---
 
-# Supported SQL Dialect Reference
+## Supported SQL Dialect Reference
 To interact with NSDb, a custom SQL like query language must be used. It has been designed to suit NSDb metrics structure and in the meantime to feel familiar with standard SQL.
 Since the nature of NSDb is different than a classic SQL database, its dialect is conceived to handle time-series data accordingly.
+
+___
 
 ## SQL Statements
 Similarly to SQL databases, NSDb allows 3 main DML statements:
@@ -17,6 +19,8 @@ Similarly to SQL databases, NSDb allows 3 main DML statements:
 Unlike standard SQL, NSDb does not support `UPDATE` statement. The main reason of this is its time series nature itself; it's extremely unlikely that a time series record has to be updated at a later time.
 
 >NOTE: NSDb SQL parser is case-insensitive, so SQL keywords can be both lower-case and upper-case. In this documentation all code example are uppercase for clarity purpose.
+
+___
 
 ## The Select Statement
 The `SELECT` statement queries bits from a specific metric.
@@ -254,6 +258,8 @@ SELECT * FROM metric WHERE dimension1 >= 1 ORDER BY timestamp LIMIT 10
 
 the 10 oldest ones.
 
+___
+
 ## The Insert Statement
 
 NSDb allows bit insertion making use of Insert statement, whose syntax is similar to standard SQL insert.
@@ -283,6 +289,7 @@ INSERT INTO metric DIM ( dimension_1 = 1, dimension_2 = 'my String Value' ) VAL 
 ```sql
 INSERT INTO metric TS = 1522232017 DIM ( dimension_1 = 1, dimension_2 = 'myStringValue' ) VAL = 1.5
 ```
+___
 ## Delete Statement
 Delete statement allows Bits deletion defining `WHERE` clause to express the condition based on deletion is performed.
 ### Simple Syntax

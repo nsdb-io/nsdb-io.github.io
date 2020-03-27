@@ -11,10 +11,14 @@ Despite actual APIs implementation is limited to Java and Scala languages, the s
 
 The main difference between Java and Scala APIs is the way asynchronous calls are handled. In Java, `CompletableFuture` is used, while async results in Scala are wrapped into Scala native `Future`.
 
+___
+
 ## Java API
 
 NSDb implements utility classes to perform writes and to execute queries using **Java language**.
 In both cases, communication to NSDb cluster is handled using a gRPC Client instantiated in ` io.radicalbit.nsdb.api.java.NSDB` connection class.
+
+___
 
 ### Init API
 Before writing into a metric, NSDb provides an api that makes possible to set some metric parameter in order to optimize write or read performance.
@@ -159,11 +163,15 @@ dimensions {
 
 ```
 
-# Scala API
+___
+
+## Scala API
 The same capabilities exposed by NSDb's Java API are implemented in Scala API too.
 The `io.radicalbit.nsdb.api.scala.NSDB`class provides a method to create a connection to an instance of NSDb. Connection to gRPC NSDb's endpoint is instanciated ayncronously using `connect` methods that require `host` and `port` parameters.
 
-# Init API
+___
+
+## Init API
 As well as for the Java apis, it is possible to set the shard interval for a metric, before the first bit is written.
 
 ```scala
@@ -189,6 +197,7 @@ Results:
 completedSuccessfully: true
 errors: ""
 ```
+___
 
 ## Write API
 Scala Write API provides `NSDB.write` method used to define an `io.radicalbit.nsdb.api.scala.Bit` to be inserted leveraging a builder pattern.
@@ -218,6 +227,7 @@ Results:
 completedSuccessfully: true
 errors: ""
 ```
+___
 
 ## Read API
 Read API allows to run query statements on NSDb, returning an `io.radicalbit.nsdb.rpc.responseSQL.SQLStatementResponse` containing selected rows.

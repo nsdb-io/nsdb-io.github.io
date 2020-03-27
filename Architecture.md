@@ -36,6 +36,8 @@ The following properties can be configured for a metric. This configuration must
 * shard interval: the time interval that determines the shard length.
 * retention: the time interval in which data are kept into the indices.
 
+___
+
 ## Schema design
 
 Given the time series nature of NSDb, it would be improper to talk about a metric's schema because each bit can have different dimensions.
@@ -50,6 +52,8 @@ Given the above preconditions, it is possible to infer and retrieve a schema for
 * a long timestamp
 * a numeric value
 * the union of each bit's dimensions
+
+___
 
 ## Sql support
 
@@ -70,6 +74,8 @@ while for retrieving the sum of accesses grouped by priority this query can be u
 select sum(value) from accesses group by priority
 ```
 
+___
+
 ## Publish-Subscribe Streaming
 
 Perhaps the most interesting feature of NSDb is a special case of data streaming based on a publish-subscribe pattern.
@@ -83,6 +89,8 @@ A user needs to subscribe by performing the following steps:
 
 NSDb will return the query results, the `Historical data` first, then, every time a record that fulfills the query provided is inserted, it will be sent to the subscriber's websocket.
 If we consider NSDb as a Source and the subscriber as a Sink, this publish-subscribe mechanism can be interpreted as a simple streaming pipeline.
+
+___
 
 ## Overall Architecture
 

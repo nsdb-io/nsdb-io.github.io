@@ -50,6 +50,7 @@ In order to subscribe a query, after connection is being opened, user has to sen
     "queryString" : "select * from metric limit 1"
 }
 ```
+___
 
 ## Success Response
 
@@ -99,6 +100,7 @@ In order to subscribe a query, after connection is being opened, user has to sen
     ]
 }
 ```
+___
 
 ## Error Responses
 

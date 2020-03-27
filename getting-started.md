@@ -123,6 +123,7 @@ Command Line Interface(CLI) can be launched executing in the same path:
 ```bash
 $ nsdb-cli --host 127.0.0.1 --port 7817 --database database_name
 ```
+___
 
 ## Next steps
 NSDb exposes data retrieval and insertion using both:
