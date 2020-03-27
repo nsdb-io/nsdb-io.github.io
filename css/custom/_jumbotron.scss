@@ -3,9 +3,13 @@
   margin-bottom: 0;
   background-color: $jumbotron-bg;
   @include border-radius(0);
-
+  
   @include media-breakpoint-up(sm) {
     padding: ($jumbotron-padding * 2) $jumbotron-padding;
+  }
+  
+  .row {
+    padding: 0;
   }
 
   &.jumbotron-full-height {
