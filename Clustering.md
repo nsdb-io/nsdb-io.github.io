@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: NSDb Clustering
+title: High availability and clustering
 ---
 
 ## Introduction

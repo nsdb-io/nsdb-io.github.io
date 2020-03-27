@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: NSDb API
+title: Fluent Java / Scala Api
 ---
 
 ## Integration API

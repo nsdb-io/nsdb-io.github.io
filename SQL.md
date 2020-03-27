@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: Sql
+title: SQL like query language
 ---
 
 ## Supported SQL Dialect Reference

@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: Publish Subscribe
+title: Ad-hoc publish-subscribe streaming feature
 ---
 
 ## WebSocket APIs
