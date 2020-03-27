@@ -3,6 +3,10 @@
   margin-bottom: 0;
   background-color: $jumbotron-bg;
   @include border-radius(0);
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   
   @include media-breakpoint-up(sm) {
     padding: ($jumbotron-padding * 2) $jumbotron-padding;
@@ -22,8 +26,9 @@
   }
 
   .jumbotron-logo {
-      max-width: 180px;
-      margin-bottom: 3rem;
+    max-width: 180px;
+    margin-bottom: 1.5rem;
+    margin-top: -3rem;
   }
 
 }
