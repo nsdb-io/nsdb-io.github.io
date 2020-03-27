@@ -1,6 +1,6 @@
 ---
-layout: pages
-title: CLI
+layout: pages-product
+title: Command Line Interface
 ---
 
 

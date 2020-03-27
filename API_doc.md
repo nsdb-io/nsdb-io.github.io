@@ -1,6 +1,6 @@
 ---
-layout: pages
-title: Fluent Java / Scala Api
+layout: pages-product
+title: Fluent Java - Scala Api
 ---
 
 NSDb provides a set of APIs written both in Scala and Java to allow third-party systems integration. An example of usage of these APIs is the implementation of the Flink Sink operator.

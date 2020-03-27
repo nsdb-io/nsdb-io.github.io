@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: pages-product
 title: High availability and clustering
 ---
 

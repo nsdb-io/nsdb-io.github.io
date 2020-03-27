@@ -1,5 +1,5 @@
 ---
-layout: pages
+layout: pages-product
 title: SQL Like Query Language
 ---
 

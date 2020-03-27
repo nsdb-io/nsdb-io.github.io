@@ -1,6 +1,6 @@
 ---
-layout: pages
-title: Focus on read performance
+layout: pages-product
+title: Optimized time series management
 ---
 
 NSDb is a time series database, thus it is optimized for handling time series data, i.e. a series of multi dimensional data points indexed by time.
