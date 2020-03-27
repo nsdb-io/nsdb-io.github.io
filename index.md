@@ -1,7 +1,7 @@
 ---
 layout: home
 title: NSDB Natural Series Database
-subtitle: Scalable, high-performance, open source Time series Database for real-time analytics
+subtitle: Scalable, High-performance, Open Source Time Series Database for Real-time Analytics
 
 about-title: What is NSDB?
 
