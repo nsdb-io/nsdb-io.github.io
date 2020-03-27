@@ -63,6 +63,19 @@
           }
       }
     }
+
+    .sidebar-footer {
+        text-align: center;
+        width: 100%;
+        
+        .sidebar-footer-logo {
+            max-width: 120px;
+            display: block;
+            margin: .25rem auto;
+            float: none;
+        }
+    }
+
     @include media-breakpoint-down(md){
       margin-left: -250px;
       &.active {
@@ -105,6 +118,8 @@
               }
           }
     }
+
+
   }
   
   
