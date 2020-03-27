@@ -3,8 +3,6 @@ layout: pages-product
 title: High availability and clustering
 ---
 
-## Introduction
-
 NSDb has been designed to be a cluster, which means that even if only a single instance is running, it is a cluster of one node.  
 Using only one node, no replicas are allocated, therefore fault tolerance and high availability are not enabled. 
 Adding nodes to the cluster has the purpose to enable those two features increasing its capacity and reliability.

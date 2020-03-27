@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: NSDB Natural Series Database
+title: NSDb Natural Series Database
 subtitle: Scalable, high-performance, open source Time series Database for real-time analytics
 module-title: Module Row Title
 title-short: Short Title
