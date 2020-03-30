@@ -104,7 +104,7 @@ Using it makes easy to handle concurrency, and also provides an abstraction for 
 
 ### Storage System
 
-NSDb takes full advantage of [Apache lucene™](https://lucene.apache.org/core/), thanks to which it is possible to index bits and run high performance searches. It also provides many primitives useful to optimize indexes and related queries to fit time series requirements.
+NSDb takes full advantage of [Apache lucene™](https://lucene.apache.org/core/){:target="_blank"}, thanks to which it is possible to index bits and run high performance searches. It also provides many primitives useful to optimize indexes and related queries to fit time series requirements.
 
 In addition to Lucene, the native file system is used for writing a commit log, used to keep track of all the writes and deletions happened in the system; it is essential in case of disaster recovery. In fact, all the log entries are written before being performed, so that it is possible to replay them in case of failure.
 
