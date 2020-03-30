@@ -19,6 +19,8 @@ A secure connection can be set up making use of SSL/TLS protocol enabled in NSDb
 
 Swagger documentation is also available for all the endpoints described in this document.
 
+___
+
 # Query APIs
 
 Allow data retrieval from NSDb according to a provided query.
@@ -136,6 +138,7 @@ Filter object is defines as below:
     ]
 }
 ```
+___
 
 ## Error Responses
 
@@ -158,6 +161,8 @@ Filter object is defines as below:
 **Code** : `500 INTERNAL SERVER ERROR`
 
 **Content** : `Error message`
+
+___
 
 ## Parsed Query
 
@@ -201,6 +206,7 @@ The response will be a json array with `records` object as result and `parsed` f
   }
 }
 ```
+___
 
 # Query Validate APIs
 
@@ -248,12 +254,16 @@ Provide `db`, `namespace`, `metric` and the query to be validated.
     "queryString": "non valid query"
 }
 ```
+___
 
 ## Success Response
 
 **Condition** : If the query provided is valid an empty success response will be returned
 
 **Code** : `200 OK`
+
+
+___
 
 ## Error Responses
 
@@ -268,6 +278,8 @@ Provide `db`, `namespace`, `metric` and the query to be validated.
 **Condition** : If metric does not exist
 
 **Code** : `404 NOT FOUND`
+
+___
 
 # Data APIs
 
@@ -318,6 +330,7 @@ Provide `db`, `namespace`, `metric` and the `bit` to be inserted.
             }
 }
 ```
+___
 
 ## Success Response
 
@@ -342,8 +355,12 @@ Provide `db`, `namespace`, `metric` and the `bit` to be inserted.
 
 **Content** : `Error message`
 
+___
+
 # Commands APis
 Commands APis map some functionalities already implemented in NSDb Command Line Interface. They consist in a set of statements aimed to retrieve information about namespace and metric structure and on the other hand to perform drop action on the latter.
+
+___
 
 ## Show databases
 `Show databases` command retrieve the list of databases.
@@ -371,6 +388,7 @@ http://<host>:<port>/commands/dbs
     ]
 }
 ```
+___
 
 ## Show namespaces
 `Show namespaces` command retrieve the list of namespaces belonging to the specified database.
@@ -403,6 +421,8 @@ http://<host>:<port>/commands/database/namespaces
   ]
 }
 ```
+___
+
 ### Error Responses
 
 **Condition** : Server error
@@ -410,6 +430,8 @@ http://<host>:<port>/commands/database/namespaces
 **Code** : `500 Internal Server Error`
 
 **Content** : `Error message`
+
+___
 
 ## Show metrics
 `Show metrics` command retrieves the list of metrics belonging to the specified namespace.
@@ -446,6 +468,7 @@ http://<host>:<port>/commands/database/namespaces
 
 **Content** : `Error message`
 
+___
 
 ## Describe metric
 `Describe metric` command retrieves the schema descriptor and [custom shard interval and retention](Architecture.md) (if present) of a specific metric.
@@ -499,6 +522,9 @@ http://<host>:<port>/commands/database/namespaces
 
 **Code** : `404 Not Found`
 
+___
+
+
 ## Drop namespace
 
 `Drop Namespace` command drops selected namespace and all belonging metrics.
@@ -525,6 +551,8 @@ http://<host>:<port>/commands/database/namespaces
 **Code** : `500 Internal Server Error`
 
 **Content** : `Error message`
+
+___
 
 ## Drop metric
 
