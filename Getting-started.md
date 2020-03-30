@@ -5,44 +5,27 @@ title: Getting started
 
 
 ### Requirements
-NSDb runs on Linux and Mac OS X. To be able to run NSDb, the only requirements are:
+NSDb runs on Linux and Mac OS X. To be able to execute an existing NSDb installation, the only requirement is:
 
 - Java 8.x (or higher) installation.
-- sbt 1.x.x (or higher).
 
-### Build from source and Launch
-It is possible to package the project using sbt with command `dist`:
-```bash
-$ sbt dist
-```
+### Get Binaries
 
-Once project packaging is completed, unzip archive created in path : `package`.
+All NSDb releases are managed and listed [here](https://github.com/radicalbit/NSDb/releases){:target="_blank"}. <br/>
+Every Release provides the binaries zip as an asset. <br/>
+In order to run the project, it is necessary to unzip the archive and start it.
+
 ```bash
-$ cd package
-$ unzip nsdb-1.0.0-SNAPSHOT.zip
-$ cd nsdb-1.0.0-SNAPSHOT/bin
+$ wget https://github.com/radicalbit/NSDb/releases/download/1.0.0/nsdb-1.0.0.zip
+$ unzip nsdb-1.0.0.zip
+$ cd nsdb-1.0.0/bin
 $ ./nsdb-cluster
 ```
-In order to check if the application is up and running properly user can call health-check API:
-```bash
-$ curl -f "http://localhost:9000/status"
-RUNNING
-```
-Command Line Interface(CLI) can be launched executing in the same path:
-```
-$ ./nsdb-cli --host 127.0.0.1 --port 7817 --database database_name
-```
-For a comprehensive documentation regarding NSDb CLI refer to  [CLI doc](CLI_doc.md).
 
-### Working with Docker
-Alternatively to sbt build, NSDb integrates Docker image publishing and container instantiation.
-To build docker image locally execute:
+### Working Docker
+It is possible to pull NSDb Docker image from [Docker Hub](https://hub.docker.com/r/weareradicalbit/nsdb/tags){:target="_blank"}
 
-```bash
-$ sbt 'project nsdb-cluster' clean docker:publishLocal
-```
-
-It's possible running a container overriding the env variable:
+It's possible to run a container overriding the env variable:
 
 ```yaml
 version: '3'
@@ -50,7 +33,7 @@ version: '3'
 services:
 
     nsdb:
-      image: weareradicalbit/nsdb:1.0.0-SNAPSHOT
+      image: weareradicalbit/nsdb:1.0.0
       environment:
         AKKA_HOSTNAME: nsdb-node-1
       ports:
@@ -66,7 +49,7 @@ version: '3'
 services:
 
     nsdb:
-      image: weareradicalbit/nsdb:1.0.0-SNAPSHOT
+      image: weareradicalbit/nsdb:1.0.0
       volumes:
         - .conf:/opt/nsdb-cluster/conf
         - /host/data/path:/opt/nsdb-cluster/data
@@ -84,10 +67,48 @@ $ docker-compose up
 ```
 Command Line Interface(CLI) can be launched executing:
 ```bash
-$ docker run --rm -it tools.radicalbit.io/nsdb:1.0.0-SNAPSHOT bin/nsdb-cli --host %HOST_IP% --port 7817 --database database_name
+$ docker run --rm -it weareradicalbit/nsdb:1.0.0-SNAPSHOT bin/nsdb-cli --host %HOST_IP% --port 7817 --database database_name
 ```
 where `%HOST_IP%` is the IP where NSDb is running.
 
+For a comprehensive documentation regarding NSDb CLI refer to  [CLI doc](CLI_doc.md).
+
+### Kubernetes
+
+Using the above mentioned docker images, it is possible to deploy a NSDb cluster in a k8s environment. <br/>
+Since of course, we are dealing with a stateful application, the following entities must be deployed:
+
+- A StatefulSet
+- An headless service used by akka in order to properly bootstrap the cluster (using DNS lookup queries)
+- A load balancer that acts mainly as an entry point for the APIs.
+
+[k8s Statefulset example](/K8sDns)
+
+### Build from source and Launch
+
+In order to build the project from source, apart from Java, sbt 1.x.x (or higher) is required.
+
+It is possible to package the project using sbt with command `dist`:
+```bash
+$ sbt dist
+```
+
+Once project packaging is completed, unzip archive created in path : `package`.
+```bash
+$ cd package
+$ unzip nsdb-1.0.0.zip
+$ cd nsdb-1.0.0/bin
+$ ./nsdb-cluster
+```
+In order to check if the application is up and running properly user can call health-check API:
+```bash
+$ curl -f "http://localhost:9000/status"
+RUNNING
+```
+Command Line Interface(CLI) can be launched executing in the same path:
+```
+$ ./nsdb-cli --host 127.0.0.1 --port 7817 --database database_name
+```
 For a comprehensive documentation regarding NSDb CLI refer to  [CLI doc](CLI_doc.md).
 
 ### Debian native package
@@ -128,8 +149,8 @@ ___
 ## Next steps
 NSDb exposes data retrieval and insertion using both:
 
-- [Web APIs](RestApis)
-- [Command Line Interface (CLI)](CLI_doc)
+- [Web APIs](/Rest)
+- [Command Line Interface (CLI)](/CLI_doc)
 
 Query subscription can be achieved making use of [WebSocket APIs](PublishSubscribe).
 

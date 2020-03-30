@@ -1,7 +1,7 @@
 ---
 layout: home
 title: NSDb Natural Series Database
-subtitle: Scalable, High-performance, Open Source Time Series Database <br/> designed For Real-time Analytics on top of Kubernetes
+subtitle: Scalable, High-performance, Open Source Time Series Database <br/> designed for Real-time Analytics on top of Kubernetes
 
 about-title: What is NSDb?
 

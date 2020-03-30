@@ -1,6 +1,6 @@
 ---
 layout: pages
-title: K8s Api 
+title: K8s Dns 
 ---
 
 ```yml
