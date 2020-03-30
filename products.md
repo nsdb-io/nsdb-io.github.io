@@ -1,11 +1,11 @@
 ---
 layout: pages
 title: NSDb Natural Series Database
-subtitle: Scalable, high-performance, open source Time series Database for real-time analytics
+subtitle: Scalable, High-performance, Open Source Time Series Database <br/> designed For Real-time Analytics on top of Kubernetes
 module-title: Module Row Title
 title-short: Short Title
 txt-short: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet dui diam. Vestibulum rhoncus posuere tellus, bibendum euismod diam ultricies ut.
-button-txt: Tech documentation
+button-txt: Documentation
 button-link: https://github.com/radicalbit/NSDb
 ---
 
@@ -14,7 +14,7 @@ NSDb is a **time-series** database **streaming oriented** optimized for the serv
 
 Time series database is now the fastest growing database segment, and the interest around this technology has more than doubled in recent years. 
 As the name suggests, time-series databases are designed to store data that changes with time. This can be any kind of data that was collected over time. It might be metrics collected from some systems - all trending systems are examples of the time-series data.
-In a few words, Tim series data are simply measurements or events that are tracked, monitored, collected or aggregated over a period of time. So everything that can be measured in time is an example of the time-series data. Such data you can query, plot, analyze in order to find correlations between different metrics.
+In a few words, Time series data are simply measurements or events that are tracked, monitored, collected or aggregated over a period of time. So everything that can be measured in time is an example of the time-series data. Such data you can query, plot, analyze in order to find correlations between different metrics.
 
 ___
 

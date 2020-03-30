@@ -11,6 +11,12 @@ title: Community
 
 In the [GitHub issue Page](https://github.com/radicalbit/nsdb/issues){:target="_blank"}, you can find a list of tasks to be implemented or bugs already discovered.
 
+## Support
+
+Users and contributors can simply ask questions by [dropping a line](mailto:nsdb@radicalbit.io).
+
+The best place to ask for help, to discuss bugs, improvements and contribution is the [Slack WorkSpace](https://nsdbworkspace.slack.com/)
+
 ___
 ## Documentation
 
