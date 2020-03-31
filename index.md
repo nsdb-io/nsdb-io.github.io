@@ -23,8 +23,10 @@ offers-content-02: Data are stored at a high speed and analyzed easily
 offers-title-03: High capacity
 offers-content-03: Fast and scalable to accommodate huge amounts of data it responds robustly to queries against large datasets
 
-button-txt: Documentation
-button-link: /Products
+button1-txt: Getting Started
+button1-link: /Getting-started
+button2-txt: Download
+button2-link: https://github.com/radicalbit/NSDb/releases
 
 card-left-title: OPEN-SOURCE
 card-left-content: 
