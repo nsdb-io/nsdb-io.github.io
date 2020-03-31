@@ -4,10 +4,10 @@ Gem::Specification.new do |spec|
   spec.name          = "test-nsdb"
   spec.version       = "0.1.0"
   spec.authors       = ["NSDb Team"]
-  spec.email         = ["info@nsdb.io"]
+  spec.email         = ["nsdb@radicalbit.io"]
 
   spec.summary       = "NSDb Website"
-  spec.homepage      = "http://nsdb.io"
+  spec.homepage      = "https://nsdb.io"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0").select { |f| f.match(%r!^(assets|_layouts|_includes|_sass|LICENSE|README)!i) }
