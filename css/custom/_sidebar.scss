@@ -83,8 +83,14 @@
       }
       .custom-menu{
           margin-right: -50px !important;
-          top: 10px !important;
+          top: .5rem !important;
       }
+    }
+
+    @include media-breakpoint-down(sm) {
+        .custom-menu{
+            right: 0 !important;
+        }
     }
   
     .custom-menu{
