@@ -5,7 +5,7 @@ title: Fluent Java - Scala Api
 
 NSDb provides a set of APIs written both in Scala and Java to allow third-party systems integration. An example of usage of these APIs is the implementation of the Flink Sink operator.
 
-Despite actual APIs implementation is limited to Java and Scala languages, the same functionalities can be easily implemented in others languages based on the agnostic protocol integration APIs are designed on top of. In fact, they are based on [gRPC](https://grpc.io/) standard that works across multiple languages and platforms.
+Despite actual APIs implementation is limited to Java and Scala languages, the same functionalities can be easily implemented in others languages based on the agnostic protocol integration APIs are designed on top of. In fact, they are based on [gRPC](https://grpc.io/){:target="_blank"} standard that works across multiple languages and platforms.
 
 The main difference between Java and Scala APIs is the way asynchronous calls are handled. In Java, `CompletableFuture` is used, while async results in Scala are wrapped into Scala native `Future`.
 
