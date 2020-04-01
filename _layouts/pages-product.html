@@ -9,6 +9,10 @@
 		{% include breadcrumb-product.html %}
 		<h1 class="mb-4">{{ page.title }}</h1>
 		{{ content }}
+		<div class="d-sm-block d-md-none">
+			<h3>Main NSDb Features</h3>
+			{% include sidebar-secondary-links.html %}
+		</div>
 		{% include footer.html %}
       </div>
 	</div>
