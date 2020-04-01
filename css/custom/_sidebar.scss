@@ -183,3 +183,9 @@
     transition: all 0.3s;
   }
   
+  @media (max-height: 565px) { // for an optimale responsive resolution we must improove javascripts on this theme this is a fast and ready solution
+    ul .list-unstyled {
+        display: none;
+    }
+  }
+  
