@@ -200,19 +200,19 @@ h2.card-title {
 }
 
 @include media-breakpoint-down(sm) {
-    body{
-        .nsdb-logo {
-          margin-top: 2rem;
-        }
-        .rdb-page {
+    body {
+        &.rdb-page {
             h1 {
                 font-size: 2rem;
             }
-    
+            
             .breadcrumb {
                 font-size: .8rem;
             }
             
+        }
+        .nsdb-logo {
+            margin-top: 2rem;
         }
         .footer {
             margin-bottom: 0;
