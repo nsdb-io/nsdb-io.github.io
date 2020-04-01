@@ -13,14 +13,36 @@
   -moz-transition: all .2s;
   transition: all .2s;
   font-family:$font-family-sans-serif;
+  color: $rdb-oslo-gray;
+  background: $rdb-white;
+  border-color: $rdb-oslo-gray;
   @include border-radius(3rem);
+
+  &:hover {
+    color: $rdb-white;
+    background: $rdb-oslo-gray;
+    border-color: $rdb-white;
+  }
 
   &.btn-negative {
     color: $rdb-white;
+    background: transparent !important;
+    border-color: $rdb-white;
     &:hover {
-      color: $rdb-white;
-      background: $secondary;
-      border-color: $rdb-white;
+      color: $secondary;
+      background: $rdb-white !important;
+      border-color: $secondary;
+    }
+  }
+
+  &.btn-primary {
+    color: $rdb-white;
+    background: $secondary;
+    border-color: $rdb-white;
+    &:hover {
+      color: $secondary;
+      background: $rdb-white;
+      border-color: $secondary;
     }
   }
 }

@@ -176,3 +176,15 @@ pre {
     position: absolute;
     bottom: 3rem;
 }
+
+.nsdb-logo {
+    max-width: 120px;
+    margin-bottom: 1rem;
+    margin-top: -3rem;
+}
+
+h2.card-title {
+    font-size: 2rem !important;
+    font-weight: inherit;
+    color: $secondary;
+}

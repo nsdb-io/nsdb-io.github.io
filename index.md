@@ -28,10 +28,14 @@ button1-link: /Getting-started
 button2-txt: Download
 button2-link: https://github.com/radicalbit/NSDb/releases
 
-card-left-title: OPEN-SOURCE
-card-left-content: 
-card-right-title: ENTERPRISE
-card-right-content:
+card-left-title: Start Contributing
+card-left-content: to NSDb
+card-left-button-label: Learn More on GitHub
+card-left-button-link: https://github.com/radicalbit/NSDb/
+card-right-title: Start Playing
+card-right-content: with NSDb
+card-right-button-label: Getting Started
+card-right-button-link: /Getting-started
 
 ---
 
