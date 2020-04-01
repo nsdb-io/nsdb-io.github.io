@@ -21,6 +21,7 @@ body {
 
         img {
             max-width: 800px;
+            width: 100%;
             margin: auto;
             float: none;
         }
@@ -197,5 +198,15 @@ h2.card-title {
 @include media-breakpoint-down(sm) {
     .nsdb-logo {
       margin-top: 2rem;
+    }
+    .rdb-page {
+        h1 {
+            font-size: 2rem;
+        }
+
+        .breadcrumb {
+            font-size: .8rem;
+        }
+        
     }
   }
