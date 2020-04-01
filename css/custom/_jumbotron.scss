@@ -11,6 +11,23 @@
   @include media-breakpoint-up(sm) {
     padding: ($jumbotron-padding * 2) $jumbotron-padding;
   }
+
+  @include media-breakpoint-down(sm) {
+    padding: ($jumbotron-padding * 2) 0;
+
+    .jumbotron-logo {
+      max-width: 120px !important;
+    }
+    h1 {
+      font-size: 2rem;
+    }
+    h2{
+      font-size: 2rem !important;
+    }
+    h5 {
+      font-size: 1rem;
+    }
+  }
   
   .row {
     padding: 0;
