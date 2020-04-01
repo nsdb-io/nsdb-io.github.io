@@ -9,6 +9,12 @@
 		{% include breadcrumb.html %}
 		<h1 class="mb-4">{{ page.title }}</h1>
 		{{ content }}
+		{% if page.title == 'NSDb Natural Series Database' %}
+		<div class="d-sm-block d-md-none">
+			<h3>Main NSDb Features</h3>
+			{% include sidebar-secondary-links.html %}
+		</div>
+		{% endif %}
 		{% include footer.html %}
       </div>
 	</div>
