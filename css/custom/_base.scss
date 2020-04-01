@@ -189,6 +189,11 @@ h2.card-title {
     color: $secondary;
 }
 
+.rdb-pre-footer {
+    margin: 0;
+    padding: 1rem !important;
+}
+
 @include media-breakpoint-down(sm) {
     .nsdb-logo {
       margin-top: 2rem;
