@@ -199,7 +199,12 @@ h2.card-title {
       margin-top: 2rem;
     }
 
-    #sidebar ul li a {
-        padding: .25rem 0 !important;
+    #sidebar {
+        .sidebar-logo {
+            padding: 0 4rem 2rem !important;
+        }
+        ul li a {
+            padding: .25rem 0 !important;
+        }
     }
   }
