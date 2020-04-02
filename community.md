@@ -5,7 +5,7 @@ title: Community
 
 [![Build Status](https://travis-ci.org/radicalbit/NSDb.svg)](https://travis-ci.org/radicalbit/NSDb){:class="img-licence"}
 [![codecov](https://codecov.io/github/radicalbit/NSDb/coverage.svg?branch=master)](https://codecov.io/github/radicalbit/NSDb?branch=master){:class="img-licence"}
-[![License](https://img.shields.io/github/license/radicalbit/NSDb.svg)](https://github.com/radicalbit/NSDb/blob/master/LICENSE){:target="_blank"}{:class="img-licence"}
+[![License](https://img.shields.io/github/license/radicalbit/NSDb.svg)](https://github.com/radicalbit/NSDb/blob/master/LICENSE){:target="_blank"} {:class="img-licence"}
 
 ## Reporting Issues
 
