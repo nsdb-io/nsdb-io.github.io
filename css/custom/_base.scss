@@ -67,7 +67,6 @@ body {
         }
         .privacy {
             float: left;
-            margin-left: .5rem;
         }
         .powered {
             float: left;
@@ -207,6 +206,7 @@ h2.card-title {
 .rdb-pre-footer {
     margin: 0;
     padding: 1rem !important;
+    border-bottom: 1px solid $rdb-abbey;
 }
 
 @include media-breakpoint-down(sm) {
@@ -226,6 +226,27 @@ h2.card-title {
         }
         .footer {
             margin-bottom: 0;
+        }
+
+        .col-sm-12 {
+            display: block;
+            flex: 0 0 100%;
+            max-width: 100%;
+
+            .privacy {
+                float: none;
+                margin-left: .5rem;
+            }
+
+            .powered {
+                width: 100%;
+                text-align: center;
+            }
+
+            .footer-logo {
+                float: none;
+                margin-top: 1rem;
+            }
         }
     }
     
