@@ -13,7 +13,7 @@ In the [GitHub issue Page](https://github.com/radicalbit/nsdb/issues){:target="_
 
 ## Support
 
-Users and contributors can simply ask questions by [dropping a line](mailto:nsdb@radicalbit.io).
+Users and contributors can simply ask questions by [dropping a line](mailto:info@nsdb.io).
 
 The best place to ask for help, to discuss bugs, improvements and contribution is the [Slack WorkSpace](https://nsdbworkspace.slack.com/)
 
@@ -31,7 +31,7 @@ When you find a new bug, you can open a new issue making sure that:
 - a brief description and a path to replicate it is provided.
 
 If you want to propose a new feature or if you are not sure that what you need is a bug or a feature:
-- Write an email about your idea to nsdb@radicalbit.io or ask for feedback on the project gitter channel. We will help you to analyze your issue and discuss together how to proceed.
+- Write an email about your idea at [nsdb.io](mailto:info@nsdb.io) or ask for feedback on the project slack channel. We will help you to analyze your issue and discuss together how to proceed.
 
 Before submitting a pull request (PR), please follow these guidelines:
 
@@ -39,7 +39,7 @@ Before submitting a pull request (PR), please follow these guidelines:
 * Make sure to follow this naming convention when opening a new branch for a PR:
   - `bugfix/[PR Code]` for a bug.
   - `feature/[PR Code]` for a new feature.
-* Execute tests locally by running `sbt clean test`. Besides tests are executed successfully, this guarantees that:
+* Execute tests locally by running `sbt clean test multi-jvm:test it:test`. Besides tests are executed successfully, this guarantees that:
   - the code is properly formatted (by the scalafmt plugin).
   - license headers are generated on each java or scala file created.
 * Make sure to add or update documentation according to the changes that are being submitted.

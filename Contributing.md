@@ -9,7 +9,7 @@ When you find a new bug, you can open a new issue making sure that:
 - a brief description and a path to replicate it is provided.
 
 If you want to propose a new feature or if you are not sure that what you need is a bug or a feature:
-- Write an email about your idea to nsdb@radicalbit.io or ask for feedback on the project gitter channel. We will help you to analyze your issue and discuss together how to proceed.
+- Write an email about your idea at [info@nsdb.io](mailto:info@nsdb.io).info@nsdb.io or ask for feedback on the project gitter channel. We will help you to analyze your issue and discuss together how to proceed.
 
 Before submitting a pull request (PR), please follow these guidelines:
 
