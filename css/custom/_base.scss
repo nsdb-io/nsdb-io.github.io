@@ -51,7 +51,7 @@ body {
         .footer-logo {
             max-width: 150px;
             display: block;
-            margin: -1rem auto .25rem auto;
+            margin: -1rem auto -2rem auto;
             float: right;
         }
 
@@ -235,17 +235,20 @@ h2.card-title {
 
             .privacy {
                 float: none;
-                margin-left: .5rem;
+                margin-left: 1rem;
+                order: 3;
             }
 
             .powered {
                 width: 100%;
                 text-align: center;
+                order: 2;
             }
 
             .footer-logo {
                 float: none;
-                margin-top: 1rem;
+                margin: 1rem auto 2rem auto;
+                order: 1;
             }
         }
     }
