@@ -4,7 +4,7 @@ Gem::Specification.new do |spec|
   spec.name          = "test-nsdb"
   spec.version       = "0.1.0"
   spec.authors       = ["NSDb Team"]
-  spec.email         = ["nsdb@radicalbit.io"]
+  spec.email         = ["info@nsdb.io"]
 
   spec.summary       = "NSDb Website"
   spec.homepage      = "https://nsdb.io"
