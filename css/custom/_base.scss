@@ -45,14 +45,30 @@ body {
 
 
     .footer {
-        margin: 6rem -3rem 0;
-        padding-top: 1rem;
+        margin: 6rem -3rem -2rem;
+        padding: 1rem;
 
         .footer-logo {
-            max-width: 120px;
+            max-width: 150px;
             display: block;
-            margin: .25rem auto;
+            margin: 1rem auto.25rem auto;
             float: none;
+        }
+
+        a {
+            &:hover {
+                color: $rdb-white;
+                text-decoration:none;
+            }
+        }
+        .legacy-row {
+            opacity: .7;
+        }
+        .privacy {
+            float: right;
+        }
+        .powered {
+            float: left;
         }
 
         small {
