@@ -14,9 +14,14 @@
     position: relative;
     font-family: $font-family-base;
 
+    .p-4 {
+        position: fixed;
+        max-width: 250px;
+        overflow: auto;
+    }
+
     .sidebar-container {
         height: 100vh;
-        background:url("/assets/images/sider-bk.png") bottom;
         background-size: cover;
     }
 
@@ -71,20 +76,6 @@
       }
     }
 
-    .sidebar-footer {
-        text-align: center;
-        width: 100%;
-        position: absolute;
-        bottom: 1rem;
-        left: 0;
-        
-        .sidebar-footer-logo {
-            max-width: 120px;
-            display: block;
-            margin: .25rem auto;
-            float: none;
-        }
-    }
 
     @include media-breakpoint-down(md){
       margin-left: -250px;
@@ -183,9 +174,4 @@
     transition: all 0.3s;
   }
   
-  @media (max-height: 565px) { // for an optimale responsive resolution we must improove javascripts on this theme this is a fast and ready solution
-    ul .list-unstyled {
-        display: none;
-    }
-  }
   

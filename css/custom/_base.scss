@@ -47,24 +47,20 @@ body {
         }
     }
 
-    #sidebar {
-        .p-4 {
-            position: fixed;
-            max-width: 250px;
-
-        }
-    }
 
     .footer {
         margin: 6rem -3rem -2rem;
+        padding-top: 1rem;
+
+        .footer-logo {
+            max-width: 120px;
+            display: block;
+            margin: .25rem auto;
+            float: none;
+        }
 
         small {
             color: $rdb-white;
-            opacity: .4;
-
-            &:hover {
-                opacity: 1;
-            }
         }
 
         .row {
