@@ -40,9 +40,14 @@
     background: $secondary;
     border-color: $rdb-white;
     &:hover {
-      color: $secondary;
+      color: $secondary !important;
       background: $rdb-white;
       border-color: $secondary;
     }
+  }
+
+  &.btn-sm {
+    font-size: .8rem;
+    padding: 0 1rem;
   }
 }
