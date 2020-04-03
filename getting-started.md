@@ -106,16 +106,22 @@ Since of course, we are dealing with a stateful application, the following entit
 
 In order to build the project from source, apart from Java, sbt 1.x.x (or higher) is required.
 
-It is possible to package the project using sbt with command `dist`:
+```
+git clone https://github.com/radicalbit/NSDb
+cd NSDb
+```
+
+After a project clone , it is possible to package the project using sbt with command `dist`:
 ```bash
 $ sbt dist
 ```
+(please note that this command might take a while, because many dependencies must be retrieved.)
 
 Once project packaging is completed, unzip archive created in path : `package`.
 ```bash
 $ cd package
-$ unzip nsdb-1.0.0.zip
-$ cd nsdb-1.0.0/bin
+$ unzip nsdb-[VERSION].zip
+$ cd nsdb-[VERSION]/bin
 $ ./nsdb-cluster
 ```
 In order to check if the application is up and running properly user can call health-check API:
