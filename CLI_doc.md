@@ -21,7 +21,7 @@ ___
 ## Commands Usage
 CLI launch command:
 ```sh
-./nsdb-cli --host 127.0.0.1 --port 7817 --database database_name
+./bin/nsdb-cli --host 127.0.0.1 --port 7817 --database database_name
 ```
 accepts 4 parameters:
 ```

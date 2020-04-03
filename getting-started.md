@@ -22,6 +22,15 @@ $ cd nsdb-1.0.0/bin
 $ ./nsdb-cluster
 ```
 
+At the end of the process, the following lines should be logged if everything went fine
+
+```
+INFO [NSDb-akka.actor.default-dispatcher-27]  - GrpcEndpoint started on interface 0.0.0.0 on port 7817
+INFO [NSDb-akka.actor.default-dispatcher-16]  - Cluster Apis started with http protocol at interface 0.0.0.0 and port 9000
+```
+
+It means that the GrpcEndpoint is correctly started at port 7817 as well as the http endpoint at port 9000.
+
 ### Working Docker
 It is possible to pull NSDb Docker image from [Docker Hub](https://hub.docker.com/r/weareradicalbit/nsdb/tags){:target="_blank"}
 
@@ -60,16 +69,25 @@ services:
         - 7817:7817
         - 9443:9443
 ```
-To start NSDb container:
+To start NSDb container the previous code snippets can be separately put inside a `docker-compose.yml` file before run the following command:
 
 ```bash
 $ docker-compose up
 ```
+
+If everything went good, by executing a `docker ps` you should be able to see an output like the following.
+
+```
+CONTAINER ID        IMAGE                        
+1f31ff8f26d8        weareradicalbit/nsdb:1.0.0
+```
+
+In order to launch the CLI, the following command must be executed 
+
 Command Line Interface(CLI) can be launched executing:
 ```bash
-$ docker run --rm -it weareradicalbit/nsdb:1.0.0 bin/nsdb-cli --host %HOST_IP% --port 7817 --database database_name
+$ docker exec -it [CONTAINER_ID] ./bin/nsdb-cli --database database_name
 ```
-where `%HOST_IP%` is the IP where NSDb is running.
 
 For a comprehensive documentation regarding NSDb CLI refer to  [CLI doc](CLI_doc.md).
 
