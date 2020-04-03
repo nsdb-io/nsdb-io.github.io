@@ -49,7 +49,7 @@ spec:
       restartPolicy: Always
       containers:
         - name: nsdb
-          image: weareradicalbit/nsdb:1.0.0-SNAPSHOT
+          image: weareradicalbit/nsdb:1.0.0
           imagePullPolicy: IfNotPresent
           #health
           readinessProbe:

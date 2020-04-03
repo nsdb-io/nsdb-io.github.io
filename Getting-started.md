@@ -35,7 +35,7 @@ services:
     nsdb:
       image: weareradicalbit/nsdb:1.0.0
       environment:
-        AKKA_HOSTNAME: nsdb-node-1
+        NODE_HOSTNAME: 127.0.0.1
       ports:
         - 9010:9000
         - 9000:7817
@@ -67,7 +67,7 @@ $ docker-compose up
 ```
 Command Line Interface(CLI) can be launched executing:
 ```bash
-$ docker run --rm -it weareradicalbit/nsdb:1.0.0-SNAPSHOT bin/nsdb-cli --host %HOST_IP% --port 7817 --database database_name
+$ docker run --rm -it weareradicalbit/nsdb:1.0.0 bin/nsdb-cli --host %HOST_IP% --port 7817 --database database_name
 ```
 where `%HOST_IP%` is the IP where NSDb is running.
 
