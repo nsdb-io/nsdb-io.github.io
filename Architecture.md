@@ -80,7 +80,7 @@ ___
 
 Perhaps the most interesting feature of NSDb is a special case of data streaming based on a publish-subscribe pattern.
 
-![Publish-Subscribe Model](/assets/images/pub-sub.png "Publish Subscribe Model")
+![Publish-Subscribe Model](/assets/images/pub-2020_chart-NSDB-streaming@4x.png "Publish Subscribe Model")
 
 A user needs to subscribe by performing the following steps:
 
