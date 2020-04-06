@@ -28,13 +28,3 @@ Developers are increasingly adopting time-series databases and using them for a 
 
 ## License
 NSDb is distributed under the [Apache 2](http://www.apache.org/licenses/LICENSE-2.0) license.
-
-
-## Main Features
-
-* [Optimized time series management](/Architecture)
-* [High availability and clustering](/Clustering)
-* [Ad-hoc publish-subscribe streaming](/PublishSubscribe)
-* [SQL like query language](/SQL)
-* [Fluent Java / Scala Api](/API_doc)
-
