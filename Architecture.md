@@ -94,7 +94,7 @@ ___
 
 ## Overall Architecture
 
-![Overall Architecture](/assets/images/overall.png "Overall Architecture")
+![Overall Architecture](/assets/images/2020_chart-NSDB-architecture@4x.png "Overall Architecture")
 
 
 NSDb strongly relies on [akka](https://github.com/akka/akka), _the implementation of the Actor Model on the JVM._
