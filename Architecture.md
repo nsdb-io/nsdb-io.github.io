@@ -80,8 +80,8 @@ ___
 
 Perhaps the most interesting feature of NSDb is a special case of data streaming based on a publish-subscribe pattern.
 
-![Publish-Subscribe Model](/assets/images/2020_chart-NSDB-streaming@4x.png "Publish Subscribe Model")
-
+![Publish-Subscribe Model](/assets/images/2020_chart-NSDB-streaming@4x.png "Publish Subscribe Model"){:class="d-sm-none d-md-block"}
+![Publish-Subscribe Model](/assets/images/2020_chart-NSDB-streaming-vert@4x.png "Publish Subscribe Model"){:class="d-sm-block d-md-none"}
 A user needs to subscribe by performing the following steps:
 
 * open a WebSocket
@@ -94,7 +94,8 @@ ___
 
 ## Overall Architecture
 
-![Overall Architecture](/assets/images/2020_chart-NSDB-architecture@4x.png "Overall Architecture")
+![Overall Architecture](/assets/images/2020_chart-NSDB-architecture@4x.png "Overall Architecture"){:class="d-sm-none d-md-block"}
+![Publish-Subscribe Model](/assets/images/2020_chart-NSDB-architecture-vert@4x.png "Overall Architecture"){:class="d-sm-block d-md-none"}
 
 
 NSDb strongly relies on [akka](https://github.com/akka/akka), _the implementation of the Actor Model on the JVM._
